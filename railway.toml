@@ -3,6 +3,6 @@ builder = "dockerfile"
 dockerfilePath = "Dockerfile"
 
 [deploy]
-healthcheckPath = "/api/whoami"
-healthcheckTimeout = 30
+healthcheckPath = "/health"
+healthcheckTimeout = 60
 restartPolicyType = "on_failure"
