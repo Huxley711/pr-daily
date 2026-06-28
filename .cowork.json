@@ -1,0 +1,32 @@
+{
+  "schema": "cowork-project/v1",
+  "id": "cw_proj_beem18hpme",
+  "name": "pr-daily",
+  "srcDir": "/home/node/.openclaw/workspace/cowork/pr-daily",
+  "createdAt": 1782559172492,
+  "updatedAt": 1782624977819,
+  "createdBy": "cowork-cli",
+  "stack": "react-fastapi-monorepo",
+  "guardCompliant": true,
+  "pack": {
+    "keep": [
+      "frontend/dist"
+    ]
+  },
+  "description": "公关人日常能力训练APP · PR Daily · 集资讯/组织/案例/训练/工作台五大模块于一体的企业公关SaaS工具",
+  "cowork": {
+    "workId": 57965,
+    "workDeployType": "APP_DEPLOY",
+    "appId": "1cfbd9ff",
+    "alias": "pr-daily",
+    "accessUrl": "https://cowork.xiaohongshu.com/s/pr-daily/",
+    "coworkAppUrl": "https://cowork.xiaohongshu.com/app/NWEzYzhjNDA",
+    "rawAccessUrl": "https://cowork.xiaohongshu.com/s/1cfbd9ff/",
+    "deploymentId": 8518,
+    "deploymentStatus": "RUNNING",
+    "publishedAt": 1782624977819,
+    "visibility": "SELF_ONLY",
+    "version": "1.7",
+    "lastZipHash": "sha256:526c25982a3632eb4774e14c68aa87d995a7c74a6ad6fa1b33062466ba30110f"
+  }
+}

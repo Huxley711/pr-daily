@@ -1,0 +1,51 @@
+/* ===== 自定义字体 ===== */
+@font-face {
+  font-family: 'FZVDLJian';
+  src: url('/fonts/FZVDLJian.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'OpticianSans';
+  src: url('/fonts/Optician-Sans.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ===== 全局重置 ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html, body, #root { height: 100%; }
+
+body {
+  background: #fff;
+  color: #1A1A1A;
+  /* 中文走 FZVDLJian，西文数字走 OpticianSans，兜底系统字体 */
+  font-family: 'FZVDLJian', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* 数字、英文字母、符号走 Optician Sans */
+body *:not(textarea):not(input) {
+  font-variant-numeric: tabular-nums;
+}
+
+/* 纯英文/数字元素专门指定 Optician Sans，中文自动 fallback 到 FZVDLJian */
+.font-en,
+[data-font="en"] {
+  font-family: 'OpticianSans', 'FZVDLJian', sans-serif;
+}
+
+button { font-family: inherit; }
+textarea, input { font-family: 'FZVDLJian', 'PingFang SC', sans-serif; }
+
+::-webkit-scrollbar { width: 3px; height: 3px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #E8E8E4; border-radius: 99px; }
+textarea::placeholder, input::placeholder { color: #BCBCB0; }
+@keyframes spin { to { transform: rotate(360deg); } }
