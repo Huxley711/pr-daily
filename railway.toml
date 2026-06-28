@@ -5,3 +5,4 @@ builder = "nixpacks"
 startCommand = "cd backend && uvicorn app:app --host 0.0.0.0 --port $PORT"
 healthcheckPath = "/api/whoami"
 healthcheckTimeout = 30
+restartPolicyType = "on_failure"
